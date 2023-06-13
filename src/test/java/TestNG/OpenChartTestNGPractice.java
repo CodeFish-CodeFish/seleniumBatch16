@@ -1,5 +1,6 @@
 package TestNG;
 
+import Utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -26,11 +27,15 @@ public class OpenChartTestNGPractice {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.navigate().to("https://demo.opencart.com/admin/");
+        driver.navigate().to(ConfigReader.readProperty("QA_url"));
         WebElement username = driver.findElement(By.cssSelector("#input-username"));
-        username.sendKeys("demo");
+
+        username.sendKeys(ConfigReader.readProperty("QA_openChart_username"));
+
         WebElement password = driver.findElement(By.cssSelector("#input-password"));
-        password.sendKeys("demo");
+
+        password.sendKeys(ConfigReader.readProperty("QA_openChart_password"));
+
         WebElement login = driver.findElement(By.tagName("button"));
         login.click();
         Thread.sleep(2000);
@@ -47,7 +52,7 @@ public class OpenChartTestNGPractice {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.navigate().to("https://demo.opencart.com/admin/");
+        driver.navigate().to(ConfigReader.readProperty("QA_url"));
         WebElement username = driver.findElement(By.cssSelector("#input-username"));
         username.sendKeys("demo");
         WebElement password = driver.findElement(By.cssSelector("#input-password"));
