@@ -23,5 +23,4 @@ public class BankLoginTest {
         BankLoginPage bankLoginPage=new BankLoginPage(driver);
         bankLoginPage.LoginPageComponentsValidation("XYZ Bank");
     }
-
 }

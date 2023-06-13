@@ -1,6 +1,7 @@
 package TestNG;
 
 
+import Utils.DriverHelper;
 import org.testng.annotations.Test;
 
 public class TestNGIntro {
@@ -12,8 +13,7 @@ public class TestNGIntro {
 
     @Test(priority = 2)
     public void mehmet(){
-        System.out.println("I am test2");
-    }
+        System.out.println("I am test2");}
 
     @Test(priority = 3)
     public void ayse(){
