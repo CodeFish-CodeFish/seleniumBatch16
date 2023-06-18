@@ -23,4 +23,16 @@ public class AllData {
                 {"locked_out_user", "secret_sauce", "Epic sadface: Sorry, this user has been locked out."},
         };
     }
+
+    @DataProvider(name = "productDetails")
+    public Object[][] getDataProductDetails(){
+        return new Object[][]{
+                {"Sauce Labs Backpack","Sauce Labs Backpack","Sly Pack","$29.99"},
+                {"Sauce Labs Bike Light","Sauce Labs Bike Light","lighting modes","$9.99"},
+                {"Sauce Labs Bolt T-Shirt","Sauce Labs Bolt T-Shirt","American Apparel, 100% ringspun","$15.99"},
+                {"Sauce Labs Fleece Jacket","Sauce Labs Fleece Jacket","quarter-zip fleece","$49.99"},
+                {"Sauce Labs Onesie","Sauce Labs Onesie","Reinforced 3-snap","$7.99"},
+                {"Test.allTheThings() T-Shirt (Red)","Test.allTheThings() T-Shirt (Red)","Sauce Labs t-shirt","$15.99"}
+        };
+    }
 }

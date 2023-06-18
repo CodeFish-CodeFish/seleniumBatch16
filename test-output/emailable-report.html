@@ -25,21 +25,149 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Etsy Test</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">5.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Sauce Test</a></td><td class="numi">14</td><td class="numi">14</td><td class="numi">0</td><td class="numi">0</td><td class="numi">58.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">Etsy Test &#8212; passed</th></tr>
-<tr class="passedodd"><td>com.test.etsy.tests.EtsyMainTest</td><td><a href="#m1"><b>validateSearchBarFunctionality</b>  </a></td><td class="numi">1</td><td>1686793572630</td><td class="numi">1490</td></tr>
+<tr id="t1"><th colspan="5">Sauce Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.test.saucedemo.tests.SauceMainTest</td><td><a href="#m1"><b>validateProductDetails</b>  </a></td><td class="numi">6</td><td>1687100187045</td><td class="numi">21444</td></tr><tr class="passedodd"><td><a href="#m2"><b>validateProductDetails</b>  </a></td><td class="numi">6</td><td>1687100187045</td><td class="numi">21444</td></tr>
+<tr class="passedeven"><td rowspan="3">com.test.saucedemo.tests.SauceLoginTest</td><td><a href="#m3"><b>validateSuccessfulLogin</b>  </a></td><td class="numi">3</td><td>1687100171116</td><td class="numi">14360</td></tr><tr class="passedeven"><td><a href="#m4"><b>validateSuccessfulLogin</b>  </a></td><td class="numi">3</td><td>1687100171116</td><td class="numi">14360</td></tr><tr class="passedeven"><td><a href="#m5"><b>validateNegativeLogin</b>  </a></td><td class="numi">5</td><td>1687100152549</td><td class="numi">17088</td></tr>
+<tr class="passedodd"><td>com.test.saucedemo.tests.SauceMainTest</td><td><a href="#m6"><b>validateProductDetails</b>  </a></td><td class="numi">6</td><td>1687100187045</td><td class="numi">21444</td></tr>
+<tr class="passedeven"><td>com.test.saucedemo.tests.SauceLoginTest</td><td><a href="#m7"><b>validateNegativeLogin</b>  </a></td><td class="numi">5</td><td>1687100152549</td><td class="numi">17088</td></tr>
+<tr class="passedodd"><td>com.test.saucedemo.tests.SauceMainTest</td><td><a href="#m8"><b>validateProductDetails</b>  </a></td><td class="numi">6</td><td>1687100187045</td><td class="numi">21444</td></tr>
+<tr class="passedeven"><td rowspan="4">com.test.saucedemo.tests.SauceLoginTest</td><td><a href="#m9"><b>validateNegativeLogin</b>  </a></td><td class="numi">5</td><td>1687100152549</td><td class="numi">17088</td></tr><tr class="passedeven"><td><a href="#m10"><b>validateNegativeLogin</b>  </a></td><td class="numi">5</td><td>1687100152549</td><td class="numi">17088</td></tr><tr class="passedeven"><td><a href="#m11"><b>validateSuccessfulLogin</b>  </a></td><td class="numi">3</td><td>1687100171116</td><td class="numi">14360</td></tr><tr class="passedeven"><td><a href="#m12"><b>validateNegativeLogin</b>  </a></td><td class="numi">5</td><td>1687100152549</td><td class="numi">17088</td></tr>
+<tr class="passedodd"><td rowspan="2">com.test.saucedemo.tests.SauceMainTest</td><td><a href="#m13"><b>validateProductDetails</b>  </a></td><td class="numi">6</td><td>1687100187045</td><td class="numi">21444</td></tr><tr class="passedodd"><td><a href="#m14"><b>validateProductDetails</b>  </a></td><td class="numi">6</td><td>1687100187045</td><td class="numi">21444</td></tr>
 </table>
-<h1>Etsy Test</h1>
-<h2 id="m1">com.test.etsy.tests.EtsyMainTest:validateSearchBarFunctionality</h2>
+<h1>Sauce Test</h1>
+<h2 id="m1">com.test.saucedemo.tests.SauceLoginTest:validateNegativeLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td></td>
+<td></td>
+<td>Epic sadface: Username is required</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.test.saucedemo.tests.SauceLoginTest:validateSuccessfulLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>problem_user</td>
+<td>secret_sauce</td>
+<td>https://www.saucedemo.com/inventory.html</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.test.saucedemo.tests.SauceLoginTest:validateNegativeLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>wrongUsername</td>
+<td>wrongPassword</td>
+<td>Epic sadface: Username and password do not match any user in this service</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.test.saucedemo.tests.SauceMainTest:validateProductDetails</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
-<tr class="param stripe"><td>iphone 13 case</td>
-<td>iphone</td>
-<td>13</td>
-<td>case</td>
+<tr class="param stripe"><td>Sauce Labs Onesie</td>
+<td>Sauce Labs Onesie</td>
+<td>Reinforced 3-snap</td>
+<td>$7.99</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.test.saucedemo.tests.SauceMainTest:validateProductDetails</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Sauce Labs Backpack</td>
+<td>Sauce Labs Backpack</td>
+<td>Sly Pack</td>
+<td>$29.99</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.test.saucedemo.tests.SauceLoginTest:validateSuccessfulLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>performance_glitch_user</td>
+<td>secret_sauce</td>
+<td>https://www.saucedemo.com/inventory.html</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.test.saucedemo.tests.SauceLoginTest:validateSuccessfulLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>standard_user</td>
+<td>secret_sauce</td>
+<td>https://www.saucedemo.com/inventory.html</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.test.saucedemo.tests.SauceLoginTest:validateNegativeLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>locked_out_user</td>
+<td>secret_sauce</td>
+<td>Epic sadface: Sorry, this user has been locked out.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.test.saucedemo.tests.SauceMainTest:validateProductDetails</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Sauce Labs Fleece Jacket</td>
+<td>Sauce Labs Fleece Jacket</td>
+<td>quarter-zip fleece</td>
+<td>$49.99</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.test.saucedemo.tests.SauceMainTest:validateProductDetails</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Test.allTheThings() T-Shirt (Red)</td>
+<td>Test.allTheThings() T-Shirt (Red)</td>
+<td>Sauce Labs t-shirt</td>
+<td>$15.99</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.test.saucedemo.tests.SauceLoginTest:validateNegativeLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>performance_glitch_user</td>
+<td></td>
+<td>Epic sadface: Password is required</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.test.saucedemo.tests.SauceMainTest:validateProductDetails</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Sauce Labs Bike Light</td>
+<td>Sauce Labs Bike Light</td>
+<td>lighting modes</td>
+<td>$9.99</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.test.saucedemo.tests.SauceMainTest:validateProductDetails</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Sauce Labs Bolt T-Shirt</td>
+<td>Sauce Labs Bolt T-Shirt</td>
+<td>American Apparel, 100% ringspun</td>
+<td>$15.99</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.test.saucedemo.tests.SauceLoginTest:validateNegativeLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td></td>
+<td>wrongPassword</td>
+<td>Epic sadface: Username is required</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
