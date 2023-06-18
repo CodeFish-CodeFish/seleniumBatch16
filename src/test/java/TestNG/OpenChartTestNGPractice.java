@@ -29,13 +29,9 @@ public class OpenChartTestNGPractice {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.navigate().to(ConfigReader.readProperty("QA_url"));
         WebElement username = driver.findElement(By.cssSelector("#input-username"));
-
         username.sendKeys(ConfigReader.readProperty("QA_openChart_username"));
-
         WebElement password = driver.findElement(By.cssSelector("#input-password"));
-
         password.sendKeys(ConfigReader.readProperty("QA_openChart_password"));
-
         WebElement login = driver.findElement(By.tagName("button"));
         login.click();
         Thread.sleep(2000);

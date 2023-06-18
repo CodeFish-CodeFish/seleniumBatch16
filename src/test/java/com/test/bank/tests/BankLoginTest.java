@@ -5,14 +5,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
 public class BankLoginTest {
-
+    @Parameters("expectedHeader")
     @Test
-    public void validateLoginPageComponents(){
+    public void validateLoginPageComponents(String expectedHeader){
         WebDriverManager.chromedriver().setup();
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -21,6 +22,6 @@ public class BankLoginTest {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
         BankLoginPage bankLoginPage=new BankLoginPage(driver);
-        bankLoginPage.LoginPageComponentsValidation("XYZ Bank");
+        bankLoginPage.LoginPageComponentsValidation(expectedHeader);
     }
 }
